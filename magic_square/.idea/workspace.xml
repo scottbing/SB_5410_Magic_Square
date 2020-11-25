@@ -28,10 +28,14 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/venv" />
+      <recent name="$PROJECT_DIR$/venv/lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/venv" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.try">
-    <configuration name="gen_square" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.gui">
+    <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="magic_square" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -43,7 +47,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/gen_square.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/gui.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -52,7 +56,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="magic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="make_square" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="magic_square" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -64,7 +68,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/magic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/make_square.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.gui" />
+        <item itemvalue="Python.make_square" />
         <item itemvalue="Python.try" />
         <item itemvalue="Python.slice" />
         <item itemvalue="Python.square_pattern" />
-        <item itemvalue="Python.gen_square" />
-        <item itemvalue="Python.magic" />
       </list>
     </recent_temporary>
   </component>
@@ -160,26 +164,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1554" height="245" key="GridCell.Tab.0.bottom" timestamp="1606275725588">
+    <state width="1554" height="303" key="GridCell.Tab.0.bottom" timestamp="1606316711927">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1003@0.23.1920.1003" timestamp="1606260179173" />
-    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1004@0.23.1920.1004" timestamp="1606275725588" />
-    <state width="1554" height="245" key="GridCell.Tab.0.center" timestamp="1606275725587">
+    <state width="1554" height="303" key="GridCell.Tab.0.bottom/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711927" />
+    <state width="1554" height="245" key="GridCell.Tab.0.bottom/0.23.1920.1005@0.23.1920.1005" timestamp="1606277317336" />
+    <state width="1554" height="303" key="GridCell.Tab.0.center" timestamp="1606316711926">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1003@0.23.1920.1003" timestamp="1606260179173" />
-    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1004@0.23.1920.1004" timestamp="1606275725587" />
-    <state width="1554" height="245" key="GridCell.Tab.0.left" timestamp="1606275725587">
+    <state width="1554" height="303" key="GridCell.Tab.0.center/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711926" />
+    <state width="1554" height="245" key="GridCell.Tab.0.center/0.23.1920.1005@0.23.1920.1005" timestamp="1606277317335" />
+    <state width="1554" height="303" key="GridCell.Tab.0.left" timestamp="1606316711926">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1003@0.23.1920.1003" timestamp="1606260179173" />
-    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1004@0.23.1920.1004" timestamp="1606275725587" />
-    <state width="1554" height="245" key="GridCell.Tab.0.right" timestamp="1606275725588">
+    <state width="1554" height="303" key="GridCell.Tab.0.left/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711926" />
+    <state width="1554" height="245" key="GridCell.Tab.0.left/0.23.1920.1005@0.23.1920.1005" timestamp="1606277317335" />
+    <state width="1554" height="303" key="GridCell.Tab.0.right" timestamp="1606316711927">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
     <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1003@0.23.1920.1003" timestamp="1606260179173" />
-    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1004@0.23.1920.1004" timestamp="1606275725588" />
+    <state width="1554" height="303" key="GridCell.Tab.0.right/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711927" />
+    <state width="1554" height="245" key="GridCell.Tab.0.right/0.23.1920.1005@0.23.1920.1005" timestamp="1606277317336" />
+    <state width="1554" height="303" key="GridCell.Tab.1.bottom" timestamp="1606316711928">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state width="1554" height="303" key="GridCell.Tab.1.bottom/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711928" />
+    <state width="1554" height="303" key="GridCell.Tab.1.bottom/0.23.1920.1005@0.23.1920.1005" timestamp="1606316679107" />
+    <state width="1554" height="303" key="GridCell.Tab.1.center" timestamp="1606316711928">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state width="1554" height="303" key="GridCell.Tab.1.center/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711928" />
+    <state width="1554" height="303" key="GridCell.Tab.1.center/0.23.1920.1005@0.23.1920.1005" timestamp="1606316679106" />
+    <state width="1554" height="303" key="GridCell.Tab.1.left" timestamp="1606316711927">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state width="1554" height="303" key="GridCell.Tab.1.left/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711927" />
+    <state width="1554" height="303" key="GridCell.Tab.1.left/0.23.1920.1005@0.23.1920.1005" timestamp="1606316679106" />
+    <state width="1554" height="303" key="GridCell.Tab.1.right" timestamp="1606316711928">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state width="1554" height="303" key="GridCell.Tab.1.right/0.23.1920.1004@0.23.1920.1004" timestamp="1606316711928" />
+    <state width="1554" height="303" key="GridCell.Tab.1.right/0.23.1920.1005@0.23.1920.1005" timestamp="1606316679106" />
     <state x="778" y="123" key="SettingsEditor" timestamp="1606264020113">
       <screen x="0" y="23" width="1920" height="1004" />
     </state>
