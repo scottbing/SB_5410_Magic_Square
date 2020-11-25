@@ -1,7 +1,6 @@
 from pandas import *  # use pandas DataFrame
 import numpy as np
 
-
 def make_square(size, stopat, type):
     # build 'seed' array
     a = [list(range(1, size + 1))]
@@ -41,6 +40,7 @@ def make_square(size, stopat, type):
     rr = list(reversed(r))
 
     # Print results
+    pandas.set_option('display.max_colwidth', 4)
 
     if type == 'TL':
         print("\nTop Left")
