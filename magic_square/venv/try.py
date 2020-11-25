@@ -1,11 +1,18 @@
 from pandas import *        # use pandas DataFrame
+import numpy as np
 
-n=4
-a = []
-b = []
-r = []
+n=5
+e=8
+
 a = [list(range(1, n+1))]
 print(a)
+
+if e < n:
+    for i in range(e, n):
+        a[0][i] = 0
+
+print("a after if:", a)
+
 b = a[:]
 
 # build forward array
@@ -16,6 +23,11 @@ for i in range(1, n):
     print("b", b)
     b[i].append(b[i][-1]+1)
     print("b", b)
+
+    e -= 1
+    if e < n:
+        for j in range(e, n):
+            b[i][j] = 0
 
 
 #print("rb:", list(reversed(b)))
