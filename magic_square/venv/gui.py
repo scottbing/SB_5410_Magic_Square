@@ -10,6 +10,7 @@ from tkinter import filedialog
 from tkinter import font
 from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageDraw, ImageTk, ImageOps, ImageEnhance, ImageFont
+from pandas import *  # use pandas DataFrame
 import os
 
 
@@ -142,11 +143,13 @@ class Application(Frame):
                       orient=HORIZONTAL
                       ).grid(row=9, column=0, columnspan=3, sticky=NSEW, pady=5, padx=5)
 
+
+
         self.msg2show = StringVar()
         Label(self,
               textvariable=self.msg2show,
               wraplength=500
-              ).grid(row=10, column=0, columnspan=2, sticky=W, pady=4)
+              ).grid(row=14, column=0, columnspan=2, sticky=W, pady=4)
 
         self.errFont = font.Font(weight="bold")
         self.errFont = font.Font(size=20)
@@ -156,7 +159,7 @@ class Application(Frame):
               foreground="red",
               font=self.errFont,
               wraplength=200
-              ).grid(row=9, column=0, sticky=NSEW, pady=4)
+              ).grid(row=15, column=0, sticky=NSEW, pady=4)
     # end def create_widgets(self):
 
     # process user selections
@@ -165,7 +168,7 @@ class Application(Frame):
         size = self.dimensions.get()
         stopat = self.stopat.get()
         type = self.orientValue.get()
-        make_square(size, stopat, type)
+        square = make_square(size, stopat, type)
     # end def processSelections(self):
 
 
@@ -177,7 +180,7 @@ def main():
     root.resizable(height=None, width=None)
     root.title("BSSD 5410 Final Question #2")
     root.iconbitmap('William_Shakespeare.ico')
-    root.geometry("450x325")
+    root.geometry("450x425")
     app = Application(root)
     root.mainloop()
 
