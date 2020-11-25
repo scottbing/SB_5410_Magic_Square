@@ -50,19 +50,14 @@ class Application(Frame):
     def resetScreen(self):
         """Clears the screen. Sets the screen
         back to its defaults"""
-        # clear the display
-        self.msg2show.set("")
+        # clear the message
+        self.msg2show.set('')
+        self.msg_ent.delete(0, 'end')
 
         # reset radio buttons
-        self.top_left.deselect()
-        self.top_right.deselect()
-        self.bottom_left.deselect()
-        self.bottom_right.deselect()
-        self.top_left.select()
-
-        # reset spin boxes
-        self.dimensions.set(5)
-        self.stopat.set(15)
+        self.encode.deselect()
+        self.decode.deselect()
+        self.encode.select()
 
     # end def clearScreen(self):
 
@@ -148,6 +143,23 @@ class Application(Frame):
         ttk.Separator(self,
                       orient=HORIZONTAL
                       ).grid(row=9, column=0, columnspan=3, sticky=NSEW, pady=5, padx=5)
+
+        # self.canvas = Canvas(self, width=150, height=150)
+        # self.canvas.grid(row=10, column=0)
+        #
+        # # self.scroll_y = Scrollbar(self, orient="vertical", command=self.canvas.yview)
+        # # self.scroll_y.grid(row=10, column=1, sticky="ns")
+        #
+        # self.result = Text(self.canvas,
+        #                       width=50,
+        #                       height=50
+        #                       ).grid(row=10, column=0, columnspan=3, sticky=NSEW, pady=5, padx=5)
+        #
+        #
+        # self.scrollbar = Scrollbar(self,
+        #                            orient=VERTICAL
+        #                            ).grid(row=10, column=1, sticky=N+S)
+        # self.canvas.configure(yscrollcommand=self.scrollbar)
 
         self.msg2show = StringVar()
         Label(self,

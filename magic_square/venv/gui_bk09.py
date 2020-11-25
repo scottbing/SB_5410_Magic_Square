@@ -50,19 +50,14 @@ class Application(Frame):
     def resetScreen(self):
         """Clears the screen. Sets the screen
         back to its defaults"""
-        # clear the display
-        self.msg2show.set("")
+        # clear the message
+        self.msg2show.set('')
+        self.msg_ent.delete(0, 'end')
 
         # reset radio buttons
-        self.top_left.deselect()
-        self.top_right.deselect()
-        self.bottom_left.deselect()
-        self.bottom_right.deselect()
-        self.top_left.select()
-
-        # reset spin boxes
-        self.dimensions.set(5)
-        self.stopat.set(15)
+        self.encode.deselect()
+        self.decode.deselect()
+        self.encode.select()
 
     # end def clearScreen(self):
 
@@ -149,11 +144,28 @@ class Application(Frame):
                       orient=HORIZONTAL
                       ).grid(row=9, column=0, columnspan=3, sticky=NSEW, pady=5, padx=5)
 
+        # self.listbox = Listbox(self,
+        #                     bg='white'
+        #                     ).grid(row=10, column=0, rowspan=4,columnspan=2, pady=5, padx=5, sticky=N+E+S+W)
+
+        self.canvas = Canvas(self, width=150, height=150)
+        self.canvas.grid(row=10, column=0)
+
+        # self.scroll_y = Scrollbar(self, orient="vertical", command=self.canvas.yview)
+        # self.scroll_y.grid(row=10, column=1, sticky="ns")
+
+
+
+        self.scrollbar = Scrollbar(self,
+                                   orient=VERTICAL
+                                   ).grid(row=10, column=1, sticky=N+S)
+        self.canvas.configure(yscrollcommand=self.scrollbar)
+
         self.msg2show = StringVar()
         Label(self,
               textvariable=self.msg2show,
               wraplength=500
-              ).grid(row=10, column=0, columnspan=2, sticky=W, pady=4)
+              ).grid(row=14, column=0, columnspan=2, sticky=W, pady=4)
 
         self.errFont = font.Font(weight="bold")
         self.errFont = font.Font(size=20)
@@ -163,7 +175,7 @@ class Application(Frame):
               foreground="red",
               font=self.errFont,
               wraplength=200
-              ).grid(row=11, column=0, sticky=NSEW, pady=4)
+              ).grid(row=15, column=0, sticky=NSEW, pady=4)
     # end def create_widgets(self):
 
     # process user selections
@@ -173,10 +185,8 @@ class Application(Frame):
         stopat = self.stopat.get()
         type = self.orientValue.get()
         self.square = make_square(size, stopat, type)
-        self.msg2show.set("")
-        self.msg2show.set(self.square)
-        # #self.listbox.delete(0, END)
-        # self.result.set(self.square)
+        #self.listbox.delete(0, END)
+        # self.data.insert(END, self.square)
     # end def processSelections(self):
 
 

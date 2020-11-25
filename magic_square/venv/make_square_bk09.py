@@ -46,25 +46,23 @@ def make_square(size, stopat, type):
         print("\nTop Left")
         forward = DataFrame(b)
         print(forward.to_string(header=False, index=False))
-        return forward.to_string(header=False, index=False)
 
     if type == 'BR':
         print("\nBottom Right")
         reverse = DataFrame(r)
         print(reverse.to_string(header=False, index=False))
-        return reverse.to_string(header=False, index=False)
 
     if type == 'BL':
         print("\nBottom Left")
         reverseb = DataFrame(rb)
         print(reverseb.to_string(header=False, index=False))
-        return reverseb.to_string(header=False, index=False)
 
     if type == 'TR':
         print("\nTop Right")
         reverser = DataFrame(rr)
         print(reverser.to_string(header=False, index=False))
-        return reverser.to_string(header=False, index=False)
+
+    return type
 
 
 def main():
